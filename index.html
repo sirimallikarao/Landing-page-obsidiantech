@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obsidian Technology | AI & Blockchain Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
+</head>
+<body>
+  <!-- Simple Custom Cursor -->
+  <div class="cursor"></div>
+  
+  <!-- Interactive Background -->
+  <div class="interactive-bg">
+    <canvas id="particles-canvas"></canvas>
+    <div class="grid-overlay"></div>
+  </div>
+
+<header>
+  <nav class="main-nav">
+    <div class="container">
+      <div class="logo">
+        <img src="/placeholder.svg?height=40&width=40" alt="Obsidian Technology Logo" class="logo-img">
+        <span class="glitch-text" data-text="OBSIDIAN">OBSIDIAN</span>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="https://chat.obsidiantech.ai/login.html" target="_blank">AI Agents</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Learning <span class="dropdown-indicator">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="bootcamp.html" class="dropdown-item">Bootcamps</a></li>
+            <li><a href="#" class="dropdown-item">Workshops</a></li>
+          </ul>
+        </li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+
+  <section class="hero">
+    <div class="hero-content-wrapper">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="tag-text">Next-Gen AI & Blockchain Solutions</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="title-line">Building the <span class="highlight">Future</span></span>
+            <span class="title-line">with <span class="highlight">AI</span> & <span class="highlight">Blockchain</span></span>
+            <span class="title-line"><span class="highlight">Technology</span></span>
+          </h1>
+          <div class="typewriter-container">
+            <div class="typewriter-text" id="typewriter"></div>
+            <div class="typewriter-cursor"></div>
+          </div>
+          <p class="hero-description">Obsidian Technology delivers forward-thinking solutions designed to redefine success. Transform your business with our cutting-edge AI solutions and blockchain applications.</p>
+          <div class="hero-buttons">
+            <a href="mailto:contactus@obsidiantech.ai?subject=Schedule%20a%20Demo" class="btn-primary">
+              <span class="btn-text">Schedule a Demo</span>
+              <span class="btn-glow"></span>
+            </a>
+            <a href="#about" class="btn-secondary">
+              <span class="btn-text">About Us</span>
+              <span class="btn-border"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-text">Scroll Down</div>
+      <div class="scroll-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="url(#logo-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="section-bg">
+      <div class="bg-line line-1"></div>
+      <div class="bg-line line-2"></div>
+      <div class="bg-line line-3"></div>
+    </div>
+    <div class="container">
+      <h2 class="section-title">Innovative Technology Solutions</h2>
+      <p class="section-description">Explore our cutting-edge solutions designed to deliver excellence and exceed expectations.</p>
+      
+      <div class="services-grid">
+        <div class="service-card" data-tilt>
+          <div class="service-image">
+            <div class="image-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Blockchain Services">
+          </div>
+          <div class="service-content">
+            <h3 class="neon-text">Blockchain Services</h3>
+            <p>End-to-end blockchain application development, smart contracts, and DApp creation.</p>
+            <a href="#" class="service-link">
+              <span>Learn More</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="url(#logo-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        
+        <div class="service-card" data-tilt>
+          <div class="service-image">
+            <div class="image-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Agentic AI">
+          </div>
+          <div class="service-content">
+            <h3 class="neon-text">Agentic AI</h3>
+            <p>Advanced AI agents that automate complex tasks and provide intelligent assistance.</p>
+            <a href="#" class="service-link">
+              <span>Learn More</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="url(#logo-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        
+        <div class="service-card" data-tilt>
+          <div class="service-image">
+            <div class="image-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="AI Solutions & Dev">
+          </div>
+          <div class="service-content">
+            <h3 class="neon-text">AI Solutions & Dev</h3>
+            <p>Custom AI development including machine learning models and natural language processing.</p>
+            <a href="#" class="service-link">
+              <span>Learn More</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="url(#logo-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        
+        <div class="service-card" data-tilt>
+          <div class="service-image">
+            <div class="image-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Multi-Disciplinary Research">
+          </div>
+          <div class="service-content">
+            <h3 class="neon-text">Research & Innovation</h3>
+            <p>Cutting-edge research at the intersection of AI, blockchain, and emerging technologies.</p>
+            <a href="#" class="service-link">
+              <span>Learn More</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="url(#logo-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Obsidian Technology</h2>
+      <div class="about-content">
+        <p class="reveal-text">Obsidian Technology, founded in 2025, is dedicated to democratizing advanced technology solutions by making cutting-edge AI and blockchain accessible to businesses of all sizes.</p>
+        <p class="reveal-text">At Obsidian Tech, we are building a community-driven revolution where AI and blockchain converge. We believe in the transformative power of collaboration and continuous innovation, harnessing cutting-edge technology and community insights to push boundaries.</p>
+        <p class="reveal-text">Join us—your voice, your ideas, and your success are at the heart of our journey.</p>
+      </div>
+      <div class="vision-mission">
+        <div class="vision card-3d">
+          <div class="card-content">
+            <h3 class="card-title neon-text">Vision</h3>
+            <p class="card-description">"To lead the revolution at the intersection of AI and blockchain, creating a decentralized financial future where AI-driven automation empowers retail investors, crypto traders, and gaming communities."</p>
+          </div>
+          <div class="card-bg"></div>
+        </div>
+        <div class="mission card-3d">
+          <div class="card-content">
+            <h3 class="card-title neon-text">Mission</h3>
+            <p class="card-description">"We are on a mission to build next-generation AI trading bots, Web3 gaming ecosystems, DeFi automation tools, and NFT-powered financial models that maximize efficiency, security, and accessibility."</p>
+          </div>
+          <div class="card-bg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="about-shapes">
+      <div class="floating-shape shape-circle"></div>
+      <div class="floating-shape shape-triangle"></div>
+      <div class="floating-shape shape-square"></div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <h3 class="neon-text">TAILORED AI PERSONAL ASSISTANT</h3>
+          <p class="reveal-text">Tailored Agentic Personal Assistant that helps you automate your Gmail. Very knowledgeable with access to real-time information.</p>
+          <div class="feature-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <h3 class="neon-text">BLOCKCHAIN DEVELOPMENT</h3>
+          <p class="reveal-text">End-to-end blockchain application development, smart contracts, and DApp creation.</p>
+          <div class="feature-icon">
+            <i class="fas fa-link"></i>
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <h3 class="neon-text">AI CODING ASSISTANT</h3>
+          <p class="reveal-text">Our coding assistant will assist in writing and debugging codes, trained with data from 7+ coding languages.</p>
+          <div class="feature-icon">
+            <i class="fas fa-code"></i>
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <h3 class="neon-text">DATA ANALYTICS</h3>
+          <p class="reveal-text">Advanced data analytics and visualization powered by AI Agents.</p>
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+        </div>
+      </div>
+      <div class="features-image">
+        <div class="image-container">
+          <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="AI and Blockchain">
+          <div class="image-glow"></div>
+        </div>
+        <div class="tech-circles">
+          <div class="tech-circle circle-1"></div>
+          <div class="tech-circle circle-2"></div>
+          <div class="tech-circle circle-3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="team">
+    <div class="container">
+      <h2 class="section-title">Meet Our Team</h2>
+      <p class="section-description reveal-text">Our leadership team brings together decades of experience in technology, innovation, and business strategy to drive Obsidian Technology forward.</p>
+      
+      <div class="team-grid">
+        <div class="team-member" data-tilt>
+          <div class="member-photo">
+            <img src="/placeholder.svg?height=120&width=120" alt="Donald Ojo" class="member-img">
+            <div class="member-glow"></div>
+          </div>
+          <h3 class="neon-text">DONALD OJO</h3>
+          <p class="member-title">Founder & CEO</p>
+          <p class="member-bio">Visionary leader with extensive experience in AI and blockchain technology.</p>
+          <div class="member-social">
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="team-member" data-tilt>
+          <div class="member-photo">
+            <img src="/placeholder.svg?height=120&width=120" alt="Shanice Williams" class="member-img">
+            <div class="member-glow"></div>
+          </div>
+          <h3 class="neon-text">SHANICE WILLIAMS</h3>
+          <p class="member-title">Co-Founder & CEO</p>
+          <p class="member-bio">Strategic innovator driving business development and partnerships.</p>
+          <div class="member-social">
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="team-member" data-tilt>
+          <div class="member-photo">
+            <img src="/placeholder.svg?height=120&width=120" alt="Victor Momodu" class="member-img">
+            <div class="member-glow"></div>
+          </div>
+          <h3 class="neon-text">VICTOR MOMODU</h3>
+          <p class="member-title">Chief Technical Officer</p>
+          <p class="member-bio">Technical genius behind our cutting-edge solutions.</p>
+          <div class="member-social">
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team-bg">
+      <div class="bg-grid"></div>
+    </div>
+  </section>
+
+  <section class="ai-agent">
+    <div class="container">
+      <div class="ai-agent-content">
+        <div class="ai-agent-image">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="AI Agent Interface">
+            <div class="image-glow"></div>
+          </div>
+        </div>
+        <div class="ai-agent-text">
+          <h2 class="glowing-text">Interact with our Autonomous Artificial Intelligence and Robotics Consultant</h2>
+          <a href="https://chat.obsidiantech.ai/login.html" class="btn-primary" id="interact-btn">
+            <span class="btn-text">Interact</span>
+            <span class="btn-glow"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="ai-agent-bg">
+      <div class="circuit-lines">
+        <div class="circuit-line cl-1"></div>
+        <div class="circuit-line cl-2"></div>
+        <div class="circuit-line cl-3"></div>
+        <div class="circuit-line cl-4"></div>
+        <div class="circuit-line cl-5"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-text">
+          <h2 class="glowing-text">Cutting-Edge Answers to Your Tech Needs</h2>
+          <p class="reveal-text">Reach Out to Us for a new experience and support.</p>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required>
+              <div class="input-glow"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required>
+              <div class="input-glow"></div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject">
+              <div class="input-glow"></div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+              <div class="input-glow"></div>
+            </div>
+            <button type="submit" class="btn-primary">
+              <span class="btn-text">Submit</span>
+              <span class="btn-glow"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="contact-shapes">
+      <div class="contact-shape cs-1"></div>
+      <div class="contact-shape cs-2"></div>
+      <div class="contact-shape cs-3"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(106, 17, 203, 0.1)" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(106, 17, 203, 0.2)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(106, 17, 203, 0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(10, 10, 10, 0.9)" />
+        </g>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/placeholder.svg?height=40&width=40" alt="Obsidian Technology Logo" class="footer-logo-img">
+          <span class="glitch-text" data-text="OBSIDIAN TECHNOLOGY">OBSIDIAN TECHNOLOGY</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://chat.obsidiantech.ai/login.html" class="footer-link">AI Agents</a>
+          <a href="#privacy" class="footer-link">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://x.com/ObsidianTech_" target="_blank" aria-label="Twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/obsidiantechai/" target="_blank" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://t.me/+LrkRqMGjVS4zNjQ8" target="_blank" aria-label="Telegram" class="social-link"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.instagram.com/memesniperai._" target="_blank" aria-label="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2025 Obsidian Technology - All Rights Reserved.</p>
+        <p>contactus@obsidiantech.ai</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot -->
+  <div class="chatbot-container">
+    <div class="chatbot-icon" id="chatbot-toggle">
+      <i class="fas fa-comment-dots"></i>
+      <div class="icon-glow"></div>
+    </div>
+    <div class="chatbot-window" id="chatbot-window">
+      <div class="chatbot-header">
+        <h3>Obsidian Bot</h3>
+        <div class="close-btn" id="chatbot-close">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="message bot">
+          <div class="message-content">
+            Hello! I'm Obsidian Bot, your AI assistant. How can I help you today?
+          </div>
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-btn">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

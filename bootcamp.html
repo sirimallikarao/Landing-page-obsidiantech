@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI & Blockchain Bootcamps | Obsidian Technology</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+    /* Bootcamp Page Specific Styles */
+    .bootcamp-hero {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      background-color: var(--darker-bg);
+      position: relative;
+      overflow: hidden;
+      padding: 120px 0 60px;
+    }
+    
+    .bootcamp-poster {
+      width: 100%;
+      background-color: var(--darker-bg);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+    }
+
+    .poster-image {
+      width: 100%;
+      border-radius: 10px;
+    }
+    
+    .bootcamp-info {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .info-icon {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(157, 0, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      color: var(--primary-color);
+    }
+    
+    .coming-soon {
+      display: inline-block;
+      background-color: rgba(157, 0, 255, 0.2);
+      color: var(--primary-color);
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    
+    .bootcamp-content {
+      margin-bottom: 40px;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Simple Custom Cursor -->
+  <div class="cursor"></div>
+
+  <div class="horizontal-bar"></div>
+
+  <header>
+    <nav class="main-nav">
+      <div class="container">
+        <div class="logo">
+          <img src="/placeholder.svg?height=40&width=40" alt="Obsidian Technology Logo" class="logo-img">
+          <span class="glitch-text" data-text="OBSIDIAN">OBSIDIAN</span>
+        </div>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="https://chat.obsidiantech.ai/login.html" target="_blank">AI Agents</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Learning <span class="dropdown-indicator">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="bootcamp.html" class="dropdown-item">Bootcamps</a></li>
+              <li><a href="#" class="dropdown-item">Workshops</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#team">Our Team</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="bootcamp-hero">
+    <div class="container">
+      <h1 class="section-title">AI & Blockchain Bootcamps</h1>
+      <p class="section-description">Intensive training programs designed to equip you with cutting-edge skills in artificial intelligence and blockchain technology.</p>
+    </div>
+  </section>
+
+  <section class="bootcamp-details">
+    <div class="container">
+      <div class="bootcamp-poster">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-04-25%20at%2020.38.55_a52416c4.jpg-YCd4w3wYsT8I6ynAsYH5j25dokxFee.jpeg" alt="Agentic AI for Full-stack Devs Bootcamp" class="poster-image">
+      </div>
+
+      <div class="bootcamp-info">
+        <span class="coming-soon">Coming Soon</span>
+        <h2>Agentic AI for Full-stack Devs</h2>
+        
+        <div class="info-item">
+          <div class="info-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div>
+            <h4>Location</h4>
+            <p>Virtual</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="text-align: center;">
+        <a href="https://form.typeform.com/to/HPVsVQQL?typeform-source=obsidiantech.ai" target="_blank" class="btn-primary">
+          <span class="btn-text">Book a Seat</span>
+          <span class="btn-glow"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="horizontal-bar"></div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/placeholder.svg?height=40&width=40" alt="Obsidian Technology Logo" class="footer-logo-img">
+          <span class="glitch-text" data-text="OBSIDIAN TECHNOLOGY">OBSIDIAN TECHNOLOGY</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://chat.obsidiantech.ai/login.html" class="footer-link">AI Agents</a>
+          <a href="#privacy" class="footer-link">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://x.com/ObsidianTech_" target="_blank" aria-label="Twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/obsidiantechai/" target="_blank" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://t.me/+LrkRqMGjVS4zNjQ8" target="_blank" aria-label="Telegram" class="social-link"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.instagram.com/memesniperai._" target="_blank" aria-label="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2025 Obsidian Technology - All Rights Reserved.</p>
+        <p>contactus@obsidiantech.ai</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
